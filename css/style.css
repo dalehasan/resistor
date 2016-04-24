@@ -1,1 +1,144 @@
 
+/* general initiation */
+body{
+margin: 80px 15px;
+text-align:center;
+font-family:Palatino Linotype;
+overflow-x:hidden;
+color:#4d3900;
+   background: url("../img/bg.jpg") no-repeat  center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+}
+* {
+    box-sizing: border-box;
+}
+
+input, textarea, select { 
+  margin-top: 0px; display: block;
+}
+
+input[type=radio] {
+  display: inline;
+}
+
+.container-fluid{
+    background: -webkit-linear-gradient( #ffcc00, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #ffcc00, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #ffcc00, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #ffcc00, white); /* Standard syntax */
+max-width:800px;
+border-radius:10px;
+border-bottom:0px solid #4d3900;
+box-shadow: 5px 5px 10px #888888; 
+}
+
+
+/* Header animation */
+.resitorHeader{
+margin-bottom:20px;
+
+animation-name: headerAnimation;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+ @keyframes headerAnimation{
+    0%   {color:brown; }
+    25%  {color:violet; }
+    50%  {color:blue; }
+    75%  {color:green; ;}
+    100% {color:red; }
+}
+@-webkit-keyframes headerAnimation{
+    0%   {color:brown; }
+    25%  {color:violet; }
+    50%  {color:blue; }
+    75%  {color:green; ;}
+    100% {color:red; }
+}
+
+/* Resitor Image Initiation */
+.pictureSection{
+height:140px;
+width:auto;
+border:0px solid  #4d3900;
+position:relative;
+}
+
+.resistorStripeEdges{
+height:8px;
+width:7%;
+display:inline-block;
+position:relative;
+box-shadow: 2px 2px 1px #888888;
+top:-50px;
+position:relative;
+    background: -webkit-linear-gradient(#fff3cc, white, #fff3cc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff3cc, white, #fff3cc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff3cc, white, #fff3cc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff3cc, white, #fff3cc); /* Standard syntax (must be last) */
+}
+
+#resistorLeft{
+left:5px;
+z-index: 1;
+}
+
+#resistorRight{
+left:-5px;
+z-index: 2;
+}
+
+.resistorBody{
+border-radius:20px;
+width:auto;
+height:auto;
+display:inline-block;
+box-shadow: 5px 5px 2px #888888; 
+    background: -webkit-linear-gradient(#fff3cc, white, #fff3cc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff3cc, white, #fff3cc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff3cc, white, #fff3cc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff3cc, white, #fff3cc); /* Standard syntax (must be last) */
+position:relative;
+z-index: 2;
+}
+
+#band1, #band2, #band3, #band4{
+background-color:brown;
+width:5px;
+height:100px;
+margin-left:20px;
+margin-right:20px;
+position:relative;
+}
+
+/* Result Section */
+#result{
+width:95%;
+font-size:2em;
+position:absolute;
+}
+
+#qunit{
+border-top:10px solid  #4d3900;
+}
+
+/* footer */
+footer{
+font-size-small;
+font-style:italic;
+margin-bottom:10px;
+}
+
+
+/*media responsive sizing*/
+@media(max-width:480px) {
+       .resistorStripeEdges{
+        display:none;
+    }
+}
+
+
+
