@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electronic color code Calculator</title>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qunit/1.18.0/qunit.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qunit/1.18.0/qunit.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="container-fluid">
+<header>
+  <div class="row">
+    <div class="col-sm-12">     
+      <h3 class="resitorHeader"><strong>Electronic Color Code Calculator</strong></h3>
+      <div class="pictureSection">
+      <div id="resistorLeft" class="resistorStripeEdges"></div>
+      <table class="resistorBody">
+      <tr>
+      <td></td>
+      <td>
+      <div id="band1"></div>
+      </td>
+      <td></td>
+      <td>
+      <div id="band2"></div>
+      </td>
+      <td></td>
+      <td>
+      <div id="band3"></div>
+      </td>
+      <td></td>
+      <td>
+      <div id="band4"></div>
+      </td>
+      </tr>
+      </table>
+      <div id="resistorRight" class="resistorStripeEdges"></div>
+      </div>
+     </div>
+  </div>
+</header>
+
+
+<section>
+  <div class="row">
+    <h3 class="resitorHeader"><strong>Choose Your Band Colors</strong></h3>
+          <div class="col-sm-3">
+          <p id="bandColor1">Band Color 1:</p>
+          <span style="background-color:black" ><input type = "radio"  name = "radioBtn" value = "0" ></span>
+          <span style="background-color:brown" ><input type = "radio"  name = "radioBtn" value = "1" checked></span>
+          <span style="background-color:red" ><input type = "radio"  name = "radioBtn" value = "2"></span>
+          <span style="background-color:orange" ><input type = "radio"  name = "radioBtn" value = "3"></span>
+          <span style="background-color:yellow" ><input type = "radio"  name = "radioBtn" value = "4"></span>
+          <span style="background-color:green" ><input type = "radio"  name = "radioBtn" value = "5"></span>
+          <span style="background-color:blue" ><input type = "radio"  name = "radioBtn" value = "6"></span>
+          <span style="background-color:violet" ><input type = "radio"  name = "radioBtn" value = "7"></span>
+          <span style="background-color:grey" ><input type = "radio"  name = "radioBtn" value = "8"></span>
+          <span style="background-color:white; border:solid 1px black" ><input type = "radio"  name = "radioBtn" value = "9"></span>
+          </div>
+          <div class="col-sm-3">
+          <p id="bandColor1">Band Color 2:</p>
+          <span style="background-color:black" ><input type = "radio"  name = "radioBtn2" value = "0" ></span>
+          <span style="background-color:brown" ><input type = "radio"  name = "radioBtn2" value = "1" checked></span>
+          <span style="background-color:red" ><input type = "radio"  name = "radioBtn2" value = "2"></span>
+          <span style="background-color:orange" ><input type = "radio"  name = "radioBtn2" value = "3"></span>
+          <span style="background-color:yellow" ><input type = "radio"  name = "radioBtn2" value = "4"></span>
+          <span style="background-color:green" ><input type = "radio"  name = "radioBtn2" value = "5"></span>
+          <span style="background-color:blue" ><input type = "radio"  name = "radioBtn2" value = "6"></span>
+          <span style="background-color:violet" ><input type = "radio"  name = "radioBtn2" value = "7"></span>
+          <span style="background-color:grey" ><input type = "radio"  name = "radioBtn2" value = "8"></span>
+          <span style="background-color:white; border:solid 1px black" ><input type = "radio"  name = "radioBtn2" value = "9"></span>
+          </div>
+          <div class="col-sm-3">
+          <p id="bandColor1">Band Color 3:</p>
+          <span style="background-color:black" ><input type = "radio"  name = "radioBtn3" value = "0" ></span>
+          <span style="background-color:brown" ><input type = "radio"  name = "radioBtn3" value = "1" checked></span>
+          <span style="background-color:red" ><input type = "radio"  name = "radioBtn3" value = "2"></span>
+          <span style="background-color:orange" ><input type = "radio"  name = "radioBtn3" value = "3"></span>
+          <span style="background-color:yellow" ><input type = "radio"  name = "radioBtn3" value = "4"></span>
+          <span style="background-color:green" ><input type = "radio"  name = "radioBtn3" value = "5"></span>
+          <span style="background-color:blue" ><input type = "radio"  name = "radioBtn3" value = "6"></span>
+          <span style="background-color:violet" ><input type = "radio"  name = "radioBtn3" value = "7"></span>
+          <span style="background-color:grey" ><input type = "radio"  name = "radioBtn3" value = "8"></span>
+          <span style="background-color:white; border:solid 1px black" ><input type = "radio"  name = "radioBtn3" value = "9"></span>
+          </div>
+          <div class="col-sm-3">
+          <p id="bandColor4">Band Color 4:</p>
+          <span style="background-color:brown" ><input type = "radio"  name = "radioBtn4" value = "1" checked></span>
+          <span style="background-color:red" ><input type = "radio"  name = "radioBtn4" value = "2"></span>
+          <span style="background-color:green" ><input type = "radio"  name = "radioBtn4" value = "0.5"></span>
+          <span style="background-color:gold" ><input type = "radio"  name = "radioBtn4" value = "5"></span>
+          <span style="background-color:silver" ><input type = "radio"  name = "radioBtn4" value = "10"></span>
+          </div>
+  </div>
+</section>
+<br><br>
+
+<section>
+  <div class="row">
+    <div class="col-sm-12">
+      <button type="button" class="btn btn-warning btn-lg" id="resultBtn" onclick="myFunction()">Calculate</button>
+      <h3 class="resitorHeader"><strong>Results</strong></h3>
+        <div id="result"></div>
+    </div>
+  </div>
+</section>
+<br><br><br><br><br><br>
+
+<footer>
+  <div class="row">
+    <div class="col-sm-12">
+     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>   by Hidayat Hasan (Dale) 
+    <br>
+      <button type="button" class="btn btn-warning btn-sm" id="testBtn">Show/Hide Unit Test</button>
+    </div>
+  </div>
+</footer>
+
+
+<div id="qunitTitle" ><h3>Simple Qunit test to validate initial value of 1,1,1,1 </h3></div>
+<div id="qunit"></div>
+
+</div>
+</div>
+</div>
+</div>
+   <script src="script/animation.js"></script>
+   <script src="script/myfunction.js"></script>
+   <script src="script/test.js"></script>
+</body>
+</html>
